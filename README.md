@@ -108,4 +108,4 @@ Jika anda mempunyai multiple service di `proto schema` anda, seperti `proto sche
 - [Basic GRPC](https://github.com/restuwahyu13/node-grpc)
 - [Go GRPC Gateway](https://github.com/restuwahyu13/go-grpc-gateway)
 - [Express GRPC](https://github.com/restuwahyu13/express-grpc-rest-api)
-- [GRPC Typescript Config](https://github.com/restuwahyu13/grpc-typescript-config)# golang-grpc
+- [GRPC Typescript Config](https://github.com/restuwahyu13/grpc-typescript-config)

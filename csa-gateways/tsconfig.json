@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"outDir": "dist",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"moduleDetection": "auto",
+		"target": "ESNext",
+		"typeRoots": ["node_modules/@types/"],
+		"paths": {
+			"~/*": ["*"],
+			"dist/protofiles": ["dist/protofiles/*"]
+		},
+		"strict": true,
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"importHelpers": true,
+		"skipLibCheck": true,
+		"downlevelIteration": true,
+		"allowSyntheticDefaultImports": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"removeComments": true,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"noImplicitReturns": false
+	}
+}

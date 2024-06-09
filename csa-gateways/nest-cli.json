@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/nest-cli",
+	"collection": "@nestjs/schematics",
+	"sourceRoot": "src",
+	"language": "ts",
+	"compilerOptions": {
+		"assets": ["**/*.proto"],
+		"builder": "swc",
+		"tsConfigPath": "tsconfig.build.json",
+		"typeCheck": true,
+    "watchAssets": true,
+		"deleteOutDir": false
+	}
+}

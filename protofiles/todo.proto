@@ -1,0 +1,43 @@
+syntax = "proto3";
+package todo;
+
+option go_package = "./todo";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/empty.proto";
+
+message Response {
+  int32 stat_code = 1;
+  string stat_message = 2;
+  string err_code = 3;
+  string err_message = 4;
+  google.protobuf.Any data = 5;
+  google.protobuf.Any pagination = 6;
+}
+
+message CreatedDTO {
+  string title = 1;
+  string description = 2;
+}
+
+message FindByIdDTO {
+  string id = 1;
+}
+
+message DeleteByIdDTO {
+  string id = 1;
+}
+
+message UpdatedByIdDTO {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+}
+
+service TodoService {
+  rpc Created (stream CreatedDTO) returns (Response) {}
+  rpc FindAll (stream google.protobuf.Empty) returns (Response) {}
+  rpc FindById (stream FindByIdDTO) returns (Response) {}
+  rpc DeletedById (stream DeleteByIdDTO) returns (Response) {}
+  rpc UpdatedById (stream UpdatedByIdDTO) returns (Response) {}
+}
